@@ -62,7 +62,7 @@
     border-radius: 16px;
     text-transform: uppercase;
     font-weight: bold;
-    background-color: rgba(224, 164, 183, 0.849);  
+    background-image: linear-gradient(rgb(245, 145, 186), rgb(241, 131, 205));    
     width: 350px;
     height: 200px;
     color: white;
@@ -77,7 +77,7 @@
     text-transform: uppercase;
     font-weight: bold;
     color: rgb(248, 248, 248);
-    background-color: rgba(224, 164, 183, 0.849);  
+    background-image: linear-gradient(rgb(245, 145, 186), rgb(241, 131, 205));  
     align-items: center;
     width: 350px;
     height: 200px;
@@ -95,8 +95,8 @@ li{
 .footer{
     display: flex;
     justify-content: space-around;
-    margin: 35px;
-    flex-direction: column;  
+    margin: 40px;
+    flex-direction: column; 
 }
 .redes{
     display: flex;
@@ -105,8 +105,17 @@ li{
     border-color: white;
     border-radius: 16px;
     color: white;
+    padding: 1rem;
+    
 }
 
+.zoom{
+    transition: all 1s;
+}
+
+.zoom:hover{
+    transform: scale(1.2);
+}
 
 /* CONTACTO */
 form{
