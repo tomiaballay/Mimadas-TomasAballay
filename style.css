@@ -13,33 +13,36 @@
     text-align: center;
     text-decoration: underline;
     color: white;
-    font-size: 48px;
+    font-size: 3rem;
 }
 /*SUBTITULO*/
 .subtitulo{
     text-align: center;
     border-color: rgba(236, 47, 104, 0.849);
-    border-width: 5px;
-    border-radius: 16px;
+    border-width: 0.3rem;
+    border-radius: 2rem;
     border-style: solid;
-    margin:25px 200px;
+    margin:1.5rem 12.5rem;
     color: white;
+    margin:2rem auto;
 }
+
+
 /*NAV*/
 .menu{
     border-style: solid;
     text-align: center;
     border-color: rgba(236, 47, 104, 0.849);
-    border-width: 5px;
-    border-width: 1;
-    margin:0px auto;
+    border-width: 0.3rem;
+    border-width: 0.6rem;
+    margin:0 auto;
     background-color: rgba(236, 47, 104, 0.849);
-    border-radius: 5px;
+    padding-top: 1rem;
 }
 .menu ul a{
     text-decoration: none;
     color: white;
-    padding: 20px 50px;
+    padding: 1.8rem 3.1rem;
     text-transform: uppercase;
     font-weight: bold;
 }
@@ -48,6 +51,7 @@
     background-color: rgb(255, 170, 196);
     cursor: pointer;
 }
+
 /*CAJAS*/
 .contenedor{
     display: flex;
@@ -57,35 +61,37 @@
 .caja1{
     display: flex;
     flex-direction: column;
-    margin-top: 35px;
+    margin-top: 2.18rem;
     border-style: solid;
-    border-radius: 16px;
+    border-radius: 1rem;
     text-transform: uppercase;
     font-weight: bold;
     background-image: linear-gradient(rgb(245, 145, 186), rgb(241, 131, 205));    
-    width: 350px;
-    height: 200px;
+    width: 21.8rem;
+    height: 12.5rem;
     color: white;
     align-items: center;
+    padding-top: 1rem
 }
 .caja2{
     display: flex;
-   flex-direction: column;
-    margin-top: 35px;
+    flex-direction: column;
+    margin-top: 2.18rem;
     border-style: solid;
-    border-radius: 16px;
+    border-radius: 1rem;
     text-transform: uppercase;
     font-weight: bold;
     color: rgb(248, 248, 248);
     background-image: linear-gradient(rgb(245, 145, 186), rgb(241, 131, 205));  
     align-items: center;
-    width: 350px;
-    height: 200px;
-    
+    width: 21.8rem;
+    height: 12.5rem;
+    padding-top:1rem;
 }
+
 h3{
     text-decoration:underline;
-    line-height: 10px;
+    line-height: 0.6rem;
 }
 li{
     list-style-type: square;
@@ -95,7 +101,7 @@ li{
 .footer{
     display: flex;
     justify-content: space-around;
-    margin: 40px;
+    margin: 2.5rem;
     flex-direction: column; 
 }
 .redes{
@@ -103,52 +109,52 @@ li{
     justify-content: space-evenly;
     border-style: solid;
     border-color: white;
-    border-radius: 16px;
+    border-radius: 1rem;
     color: white;
     padding: 1rem;
     
 }
-
+/* ANIMACIONES */
 .zoom{
     transition: all 1s;
 }
 
 .zoom:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 /* CONTACTO */
 form{
-    width: 450px;
+    width: 28.12rem;
     margin: auto;
     background-color: rgb(0, 0, 0, 0.1);
-    padding: 10px 20px;
+    padding: 0.6rem 1.25rem;
     box-sizing: border-box;
-    border-radius: 8px;
-    margin-top: 25px;
+    border-radius: 0.5rem;
+    margin-top: 1.5rem;
 }
 .formulario{
     text-align: center;
     color: white;
     text-transform: uppercase;
-    font-size: 28px;
+    font-size: 1.75rem;
     text-decoration: underline;
 }
 input, textarea {
     width: 100%;
-    margin-bottom: 15px;
-    padding: 7px;
-    font-size: 17px;
+    margin-bottom: 1rem;
+    padding: 0.43rem;
+    font-size: 1.06rem;
     box-sizing: border-box;
 }
 textarea {
-    min-height: 100px;
-    max-height: 200px;
+    min-height: 6.25rem;
+    max-height: 12.5rem;
 }
 #boton{
 background-color: rgb(190, 77, 190);
 color: white;
-padding: 20px;  
+padding: 1.5rem;  
 border: none;  
 font-weight: bold;
 }
@@ -159,8 +165,9 @@ font-weight: bold;
 
 /* QUIENES SOMOS */
 .quiencont{
-margin-bottom: 40px;
-padding-bottom: 250px;
+margin-bottom: 2.5rem;
+padding-bottom: 30rem;
+padding-top: 1rem;
 }
 
 /* QUE HACEMOS */
@@ -169,5 +176,44 @@ padding-bottom: 250px;
     text-align: center;
     border-color: hotpink;
     color: white;
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border-radius: 1rem;
 }
+/*MEDIA QUERIES*/
+@media (max-width:320px){
+    .contenedor{
+        display: flex;
+        flex-direction: column;
+    }
+    .caja1{
+        padding-right: 3rem;
+        padding-bottom: 80%;
+        width: 19rem;
+    }
+    .caja2{
+        padding-right: 3rem;
+        padding-bottom: 80%;
+        width: 19rem;
+    }
+    img{
+        width: 4.5rem;
+        padding:0 1rem;
+    }
+    .footer{
+        display: flex;
+        flex-direction: row;
+    }
+    .quiencont{
+        padding-bottom: 30rem;
+        margin-left: 0.6rem;
+    }
+    .prod{
+        margin-left: 0.6rem;
+        margin-top: 0;
+        margin-bottom: 1rem;
+    }
+    form{
+        width:18rem;
+    }
+    }
